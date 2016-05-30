@@ -1,0 +1,35 @@
+{
+  "name": "fcc-force-directed-graph",
+  "version": "1.0.0",
+  "description": "free code camp use d3 to create force directed graph",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "postinstall": "bower cache clean && bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ratracegrad/FCC-Force-Directed-Graph.git"
+  },
+  "keywords": [
+    "free",
+    "code",
+    "camp",
+    "force",
+    "directed",
+    "graph",
+    "jennifer",
+    "bland"
+  ],
+  "author": "Jennifer Bland",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ratracegrad/FCC-Force-Directed-Graph/issues"
+  },
+  "homepage": "https://github.com/ratracegrad/FCC-Force-Directed-Graph#readme",
+  "dependencies": {
+    "bower": "^1.7.9",
+    "express": "^4.13.4"
+  }
+}
