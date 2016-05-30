@@ -1,0 +1,33 @@
+{
+  "name": "fcc-force-directed-graph",
+  "description": "free code camp use d3 to create force directed graph",
+  "main": "server.js",
+  "authors": [
+    "Jennifer Bland"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "free",
+    "code",
+    "camp",
+    "force",
+    "directed",
+    "graph",
+    "jennifer",
+    "bland"
+  ],
+  "homepage": "https://github.com/ratracegrad/FCC-Force-Directed-Graph",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/javascripts",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "^3.5.17",
+    "jquery": "^2.2.4",
+    "bootstrap": "^3.3.6"
+  }
+}
