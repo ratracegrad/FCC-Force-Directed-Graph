@@ -29,6 +29,9 @@ public/javascripts/d3
 public/javascripts/jquery
 public/javascripts/bootstrap
 .idea
+public/javascripts/d3
+public/javascripts/jquery
+public/javascripts/bootstrap
 
 
 # Optional npm cache directory
