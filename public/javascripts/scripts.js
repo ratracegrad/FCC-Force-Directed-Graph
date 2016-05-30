@@ -14,7 +14,7 @@ $(document).ready(function() {
             .attr("height", height);
 
     var tooltip = d3.select('.tooltip');
-    
+
     d3.json("countries.json", function(error, graph) {
         if (error) throw error;
 
@@ -31,7 +31,8 @@ $(document).ready(function() {
 
         var node = svg.selectAll(".node")
                 .data(graph.nodes)
-                .enter().append("circle")
+                .enter()
+                .append("circle")
                 .attr("class", "node")
                 .attr("r", 10)
                 .style("fill", function(d) { return color(d.code); })
