@@ -13,6 +13,8 @@ $(document).ready(function() {
             .attr("width", width)
             .attr("height", height);
 
+    var tooltip = d3.select('.tooltip');
+    
     d3.json("countries.json", function(error, graph) {
         if (error) throw error;
 
@@ -33,6 +35,15 @@ $(document).ready(function() {
                 .attr("class", "node")
                 .attr("r", 5)
                 .style("fill", function(d) { return color(d.code); })
+                .on('mouseover', function(d) {
+                    tooltip.style("display", "block");
+                    tooltip.html(d.country)
+                            .style("left", d3.event.pageX + "px")
+                            .style("top", (d3.event.pageY - 28) + "px");
+                })
+                .on('mouseout', function(d) {
+                    tooltip.style("display", "none");
+                })
                 .call(force.drag);
 
         node.append("title")
