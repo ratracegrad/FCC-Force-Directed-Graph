@@ -33,7 +33,7 @@ $(document).ready(function() {
                 .data(graph.nodes)
                 .enter().append("circle")
                 .attr("class", "node")
-                .attr("r", 5)
+                .attr("r", 10)
                 .style("fill", function(d) { return color(d.code); })
                 .on('mouseover', function(d) {
                     tooltip.style("display", "block");
@@ -41,7 +41,7 @@ $(document).ready(function() {
                             .style("left", d3.event.pageX + "px")
                             .style("top", (d3.event.pageY - 28) + "px");
                 })
-                .on('mouseout', function(d) {
+                .on('mouseout', function() {
                     tooltip.style("display", "none");
                 })
                 .call(force.drag);
